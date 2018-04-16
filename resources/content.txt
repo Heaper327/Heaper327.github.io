@@ -1,0 +1,277 @@
+----------------------------------------------LOG 2017/12/6----------------------------------------------
+
+I have worked on the website, and find out that I need to re-learn html since free code camp did't teach many of the most important functions of html, neither didn't they teach the mechanism behind many of the functions, for instance, <link> as one of the most fundimental element is not mentioned AT ALL. 
+My previous plan of make a website containing CSS and bootstrap now seems too complicated, I am going to create a very basic website with only a header, a content and a footer.
+
+----------------------------------------------LOG 2017/12/7----------------------------------------------
+
+The website is finished, here are the reflections I have: 
+1. The box model is deadly important, it is the basic of CSS arrangemen
+2. I need to learn element arrangement, bootstrap arrangement somehow dosen't work as well as I expected
+3. I use class property for style of elements, not sure if it is a good idea, need to find out principles of website coding
+
+一些人生的经验：
+
+html默认用的是流式布局法，所有的元素被分为以下几种：
+
+1. 方块元素（block element）
+方块元素在默认情况下，在父元素里从上而下垂直排列
+默认情况下，方块元素的宽度是100%，也就是一行
+方块元素高度，行高，顶底边距都可以设置
+
+2. 内联元素（inline element）
+内联元素会在父元素里从左到右水平排列
+内联元素和其他元素在一行上
+内联元素高度，行高，顶底边距不可以设置
+
+3. 内联块状元素
+当一个元素被设置为 position:absolute，float:left，float:right，display:inline-block时，它就是一个内联块状元素
+内联块状元素可以和其它元素在一行上
+内联块状元素的尺寸和边距可以设置
+
+display属性的妙用：
+
+display属性可以改变元素在排版时的类别，如display:inline-block可以让元素有inline-block的特性
+
+display:table-cell可以让元素拥有单元格的属性，而它的父元素应该有table-row属性
+同一个table-row里的table-cell是等高的，它们的高度等于它们中最高的元素的高度
+table-cell对margin属性不敏感
+
+----------------------------------------------LOG 2017/12/8----------------------------------------------
+
+Much better :D I went through articles introducing how do CSS arrangement works, and found out the usage of table-cell and inline-block. I finished another website in about 30min with fixed header, nav and content with equal height, and shadow for header and nav.
+I also started to learn about arrangement with position:relative, and mentioned something interesting happened: normally my nav and content will go under header which is fixed, but when I add a image to the nav, it go above the header with content (both of them are display:table-cell in another display:table div)
+
+A few days ago, I installed some plugin for sublime text, 
+
+一些人生的经验：
+position属性可以改变元素的定位
+
+position:absolute不会改变元素的位置，是哪里就是哪里
+
+position:relative会使元素<!--未完待续-->
+
+
+----------------------------------------------LOG 2017/12/9----------------------------------------------
+
+I didn't do much coding today, because I am kinda stucked, don't know what to add to my testing index yet. That's why I decided to mainly learning and only code as a way to practice next week, and focus on jQuery and Javascript. I also started to learn about the process/philosophy of designing a functional website.
+
+网站开发的流程：
+1. 确定需求，确定功能/受众/设计风格上的需求
+2. 设计网站，设计网站的外观，功能等
+3. 实现网站，前端负责网站外观，接口等，后端负责服务器，数据库等
+4. 测试网站，在本地进行测试
+5. 上线网站，将网站上传到互联网服务器中，开始对外服务
+6. 维护网站，针对需求对网站进行定期的改进和维护
+
+----------------------------------------------LOG 2017/12/10----------------------------------------------
+
+I didn't do any coding today, but I organized my files, and get some idea of how can I automatically categorize my pictures:
+
+一些人生的经验：
+
+为什么我要识别表情包：
+1. 懒
+2. 聊天的时候希望能在30秒内迅速找到表情包
+
+如何识别表情包：
+
+表情包分为两种，一种是通用表情包，另一种是非通用表情包
+两种表情包的共同之处是：1. 他们都不同程度的玩梗（文字或图片）2. 他们都在网络交流中使用
+两种表情包的不同之处是：通用表情包（如“那你很棒棒”）可以在大多数环境下使用，而非通用表情包（如zun的巅峰之作）只能在特定环境下使用
+
+这样分类有一个好处，那就是它可以降低表情包识别的难度，因为大部分通用表情包都较为相似，都有包含梗的语句，而且可以在网络上找到包含大部分流行梗的数据库（比如萌百）。这样一来，可以将表情包通过文字识别API提取文字，之后将文字与数据库中的梗（文字）进行比较，如果有符合的梗，就归入通用表情包文件夹，如果没找到字+不是动图，就归入其他图片，剩下的基本上是各种各样的其他梗图。
+
+实现难度目测比较高，但已经可以接受了
+
+----------------------------------------------LOG 2017/12/11----------------------------------------------
+
+I FINALLY find out why doesn't my <a> links work. They assuem that the link written in their href="" property is a local path, which means I need to write "http://www.google.com" instead of "google.com". This also allow me to link my websites together. 
+This is quite interesting since it seems like that local address are actually the same thing as internet address, since both can be accessed through brower/finder. The only difference is that local address start with "file://" while internet address start with "http://"
+
+----------------------------------------------LOG 2017/12/13----------------------------------------------
+
+I went through w3school and get this list of things I should learn:
+
+1. How does WWW work
+2. html
+3. css
+4. Javascript
+5. xml/json (transfer information)
+6. server script (control server)
+7. SQL (database management)
+
+----------------------------------------------LOG 2017/12/14----------------------------------------------
+
+I started to re-learn Javascript in website. It is much easier to understand now after practicing lua and algorithm challenges. The way Javascript works is very simple: using "document.getElementById", JS could find a element, and return it as a object, then you can call its methods or change its properties. For instance, after you getElement a image, you can then change its width by handle.width, or its src by handle.src. For attributes like style, you can change them by handle.style.border.
+
+----------------------------------------------LOG 2017/12/16(0:00)----------------------------------------
+
+一些想法：
+
+网站的本质是什么？网站的本质是客户端向服务端请求文件，服务端对请求做出响应，网页排版、图片、文字等都是这样取得的，而为了请求文件，就需要文件路径，而同一页面的文件出于管理考虑会有相似的路径。因此为了提高效率，精简代码，取色器可以绕过网页，直接使用文件路径获取文件，这样一来总结路径规律就至关重要。
+
+经过多次试错，我暂时没有总结出规律。但是值得一提的是，黑砖网页结构简单，逻辑清晰，有翻页、评论等功能，很适合作为JS和CSS的范例网页。
+
+----------------------------------------------LOG 2017/12/16 IMPORTANT--------------------------------------
+
+I decided to change the purpose of this log from recording CS notes and ideas to recording all kinds of ideas I have - CS, organzing, design, writing.
+
+一些人生的经验：
+
+写math的discovery其实也是一种变相的writing，特别是introduction和conclusion部分，因此writing的手法和架构在discovery这里也能发挥作用。
+具体来讲，在写introduction的时候，可以参照His/Eng的写法，用MainPoint-Evidence-Analysis的写法。举例说明，Discovery: Deriving the unit circle是难度较高的discovery，其难度主要在于unit circle是重要知识点，内容比较繁多，不容易把握住整体，在这里应用这种写法就可以使introduction清晰明确，达到事半功倍的效果。
+
+----------------------------------------------LOG 2017/12/17----------------------------------------------
+
+Eurika! I finished the introduction in no time - my strategy worked!
+
+Here I get some notes from reading "thinking in systems":
+
+Systems are consisted of elements, interconnectedness and goals
+	elements themselves are not system, they must be interconnected to be a system e.g. dead bodies are not human
+Systems can be embedded in each other
+Systems are often dynamic - they change over time, evolve in some pattern
+All above can be either physical or not. A element can be sands in a truck, or the confidence of a person
+
+Goals of a system is the most important part, the interconnectedness is the second important, and elements are the least important e.g.chairs in a house are less important than how people use them to the system. Unless changing element also changes the other two.
+
+Stocks are the basic units of system, they are things that last over time - like the money in a safe, or water in a tank
+	Size of stocks are often monitored e.g. the morale of army, the money in account, the energy one has
+
+The size of stocks are changed by inflow or outflow, they could change the size of stock in different rate.
+	total inflow > total outflow, stock grow bigger
+	total inflow < total outflow, stock get smaller
+	total inflow = total outflow, stock reaches dynamic equilibrium
+
+
+Stocks change slowly though flows could change rapidly. 
+	This makes stocks useful as delay e.g. reserviors
+	This also makes it resistant to change e.g. culture
+
+Stocks make inflow and outflow independent e.g. the stock of stores allows factories to produce more or less than the number customers buy
+
+feedback loop is how stock size effect flow (often flows to/from itself)
+	stablizing loop/balacing loop is when stock resist the change of its size 	
+		e.g. you eat food when you are hungry and stop when you are full
+		This loop stablize the stock but also cause resistance to change
+	reinforcing loop is when the stock reinforces the change of its size
+		e.g. the more money in your account the more interest you get
+
+----------------------------------------------LOG 2017/12/19----------------------------------------------
+
+Yesterday I fininshed a complex static website in a single period. I felt like I am enough with css - I am not bored with it, but I feel like I should move forward now, so I started learning PHP, the easy-to-use foundamental server script.
+
+一些人生的经验：
+
+PHP代码和JS有相似之处，都是配合HTML使用的web语言，可以与html同时使用，而且都可以用C式的注释，比反人类的HTML注释不知道高到哪里去了。
+
+PHP代码以"<?php"开头，"?>"结尾，语句间用"；"分隔，如下：
+<?php
+	echo "Hello World"
+?>
+
+PHP中，所有函数、类和关键词对大小写不敏感，echo/ECHO/Echo都没问题
+PHP中变量对大小写敏感
+
+PHP中，所有变量以$开头，弱类型，无需声明
+
+PHP中，变量分为全局变量（global），局部变量（local）和静态变量（static）
+全局变量在函数外声明，局部和静态变量在函数内声明
+
+全局变量在函数中使用时，要加 global 关键字
+
+局部变量的生命周期是函数的生命周期，静态变量的生命周期是程序的生命周期
+
+----------------------------------------------LOG 2017/12/20----------------------------------------------
+
+工作效率：
+
+与哼唱的音量成正比
+
+与昨晚睡眠时间成正比
+
+与周围的安静程度成正比
+
+与音乐的音量成反比
+
+与相声的音量成反比
+
+与刷知乎的时间成反比
+
+与夸夸而谈工作方法的时间成反比
+
+工作质量：
+
+与昨晚睡眠时间成正比
+
+与和老师谈话的次数成正比
+
+与距离12点的时间成正比
+
+与距离deadline的时间成反比
+
+与玩炉石的时间成反比
+
+----------------------------------------------PHP基础知识---------------------------------------------------
+PHP中可以用print或echo输出
+- print只能输出一个字符串，而且始终返回1
+- echo可以输出多个字符串
+可以用{}在字符串中加入变量
+
+可以在字符串中加入HTML标记，如<h2>
+
+$age = [10,11,12];
+echo ("I am {$age[2]} years old<br/>");
+
+var_dump可以输出参数的数据类型和值等信息
+
+在PHP中，可以使用class关键字声明类，并使用new关键字创建类的实例。
+
+使用define()可以声明常量，常量不可以撤销或被修改
+define第一个参数是常量名称，第二个是常量值，第三个是可选参数，决定大小写敏感性
+
+PHP中有一些预定义的超全局变量，不需要global关键字就可以访问。它们大部分都是键值对数组，可以通过如下形式访问：
+$_SERVER['PHP_SELF'];
+超全局变量非常黑科技，它们可以无视作用域访问，甚至可以跨文件访问
+
+-----------------------------------------使用PHP处理表单----------------------------------------
+
+$_POST和$_GET超全局变量可以用来获取表单信息，举例说明：
+
+<form action="test.php" method="post">
+	Your id: <input type="number" name="id">;
+	<input type="submit">
+</form>
+
+需要提交的表单需要包含在<form>元素里。<form>有两个重要属性：
+action：目标php文件，可以用<?php echo $_SERVER['PHP_SELF']?>指定自身
+method：目标变量，'post'指$_POST，'get'指$_GET
+
+<input>元素有两个重要属性：
+type：元素类型，'text'接受字符，'number'接受数字
+name：元素名称，类似JS的id属性，用于标记元素
+
+提交表单过程：
+用户在<input>中输入内容并提交。input内容+name值被发送到action指定的php文件中method指定的变量，php刷新。
+
+$_POST和$_GET都可以实现提交表单的功能，但是他们的实现原理有所不同：
+$_POST通过HTTP POST传输数据
+$_GET通过URL参数传输数据
+
+注意！注意！注意！
+$_GET发送的数据是对其他人可见的！$_POST发送的数据对其他人是不可见的！注意安全问题，选用$_POST！
+-------------------------------------------------------------------------------------------------
+
+LOG 2017/12/21
+-----------------------------------------处理表单时的安全问题----------------------------------------
+在处理表单时，要注意注入式攻击，应先将输入处理过后再使用
+
+trim()函数可以去掉多余的空格、换行等
+stripslashes()函数可以去掉反斜杠
+htmlspecialchars()函数可以无效化html标记
+
+
+
+
+

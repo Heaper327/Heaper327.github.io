@@ -1,0 +1,35 @@
+{
+    "general":{
+        "siteRoot":"http://localhost/"
+    },
+
+    "css":{
+        "nav-top":[
+            "components/nav-top/",
+            "nav-top.css"
+        ],
+        "menu-show":[
+            "componenets/menu-show",
+            "menu-show.css"
+        ],
+        "menu-slide":[
+            "componenets/menu-slide",
+            "menu-slide.css"
+        ]
+    },
+
+    "smarty":{
+        "header":[
+            "components/header/",
+            "header.html",
+            "header.css"
+        ]
+    },
+
+    "php":{
+        "postGet":[
+            "components/postGet",
+            "postGet.php"
+        ]
+    }
+}

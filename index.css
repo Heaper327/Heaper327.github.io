@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    text-align: center;
+    background: rgba(139, 168, 164, 0.92);
+    /*in case of using image as background*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*wrapper style*/
+
+.wrapper{
+    width: 960px;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+/*space between vertically aligned child elements*/
+.wrapper > * + * {
+    margin-top: 10px;
+}
+
+/*wrapper style ends*/
+
+/*header style starts*/
+
+.wrapper > header{
+    display: block;
+    background: inherit;
+}
+
+.wrapper > header .header {
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+    position: relative;/*absolute child element*/
+    background: #EEEEEE;
+}
+
+.wrapper > header .header img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.wrapper > header .header h1{
+    display: inline-block;
+    font-size: 50px;
+    font-style: italic;
+    color: darkcyan;
+    line-height: 100px;
+}
+
+.wrapper > header .header cite{
+    display: inline-block;
+    color: #333333;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*nav-top style*//*this module needs to be changed*/
+
+.wrapper > header .menu-horizontal > nav > .red-bar{
+    background: rgb(179, 2, 2);
+}
+
+.wrapper > header .menu-horizontal > nav li:hover{
+    background: rgb(179, 2, 2);
+}
+
+/*header style ends*/
+
+/*body style starts*/
+
+.wrapper > main {
+    display: table;/*table-cell child elements*/
+    border-spacing: 10px;/*replace margin between child elements that don't work*/
+    border-collapse: separate;
+    width: 100%;
+    background: inherit;
+    text-align: left;
+}
+
+/*nav-side style*/
+
+.wrapper > main > aside {
+    display: table-cell;
+    vertical-align: top;
+    width: 260px;
+    background: #EEEEEE;
+    padding: 10px;
+    text-align: center;
+}
+
+/*space between vertically aligned elements*/
+.wrapper > main > aside * + * {
+    margin-top: 10px;
+}
+
+.wrapper > main > aside img {
+    max-width: 240px;
+    max-height: 240px;
+    border: 2px solid darkcyan;
+}
+
+/*article style*/
+
+.wrapper > main > article {
+    vertical-align: top;
+    display: table-cell;
+    width: 680px;
+    background: #EEEEEE;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.wrapper > main > article > * + * {
+    margin-top: 10px;
+}
+
+.wrapper > main > article img {
+    display: inline-block;
+    max-width: 650px;
+    max-height: 650px;
+    border: 2px solid darkcyan;
+}
+
+.wrapper > main > article p{
+    word-break: break-all;
+    padding: 10px;
+}
+
+/*body style ends*/
+
+/*footer styles*/
+
+.wrapper > footer {
+    width: 100%;
+    background: #DDDDDD;
+    padding: 10px;
+}
+
+/*space between vertically aligned elements*/
+.wrapper > footer > * + * {
+    margin-top: 10px;
+}
+
+.wrapper > footer > p {
+    font-style: italic;
+}
+
+/*footer style ends*/
+
+/*ultility styles starts*/
+
+p.topic {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-test {
+    background: red;
+}
+
+
+div.image-caption {
+    background: #DDDDDD;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+
+div.image-caption p.caption{
+    font-style: italic;
+}
+
+/*ultility style ends*/

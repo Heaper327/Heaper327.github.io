@@ -1,0 +1,96 @@
+.wrapper{
+	padding: 5px;
+	margin: 0;
+	min-width: 1000px;
+	background-color: #999999;
+	display: inline-block;
+}
+
+body{
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+	background-color: #333333;
+}
+
+.header{
+	box-shadow: 0px 1px 3px #888888;
+	background-color: #999999;
+	border: 2px solid #333333;
+	margin-bottom: 10px;
+}
+
+.map{
+	padding: 5px;
+	display: block;
+	background-color: #EEEEEE;
+	min-height: 40px;
+}
+
+.content{
+	display:block;
+	margin: 0;
+	padding: 10px;
+	vertical-align: top;
+	text-align: middle;
+	background-color: #999999;
+	border: 2px solid #333333;
+}
+
+.post{
+	padding: 10px;
+	margin: 10px 0px;
+	display: block;
+	background-color: #EEEEEE;
+	text-align: left;
+	border: 1px solid #AAAAAA;
+}
+
+.post-content{
+	display:block;
+	margin-top:10px;
+	padding:0px;
+	text-align: left;
+	background-color: transparent;
+}
+
+.content .portrait{
+	display: inline-block;
+	margin: 0px;
+	border: 1px solid #333333;
+}
+
+.content .inner-info{
+	display: inline-block;
+	margin:0;
+	padding: 0;
+	width:50%;
+}
+
+
+.post .image{
+	width: 300px;
+	border: 2px solid #777777;
+	margin: 5px;
+}
+
+.comment{
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 0px 1px 3px #888888;
+	background-color: #EEEEEE;
+	border: 2px solid #333333;
+	text-align: center;
+}
+
+textarea{
+	display: inline-block;
+	width: 90%;
+	min-height: 100px;
+	font-size: 15px;
+}
+
+.comment-submit{
+	width: 200px;
+	font-size: 50px;
+}

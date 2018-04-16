@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<!--head start-->
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>So you find this local website</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="index.css" rel="stylesheet">
+<script src="index.js"></script>
+</head>
+
+<!--head end-->
+<!--style start-->
+
+<style>
+	#contentPswd{
+		text-align: center;
+		display: block;
+		min-height: 100px;
+	}
+	.header #time{
+		position: relative;
+		right: 0px;
+	}
+</style>
+
+<!--style end-->
+<!--body start-->
+
+<body onload="setTimer()">  
+
+	<div class="wrapper" id="wrapper">
+
+	<div class="header" id="header">
+		<h1 style="padding: 5px">327's Blog</h1>
+		<span><p style="padding: 5px" id="time"></p></span>
+	</div>
+
+	<div class="middle" id="middle">
+		<div class="nav">
+			<img class="image" src="http://localhost/resources/Portrait.png" width="200px"/>
+
+		<div style="margin:10px 0px;">
+			<audio src="http://localhost/resources/Imagine.mp3" controls="controls"/>
+				your brower dosen't support audio
+			</audio>
+		</div>
+
+		<!--links to other websites-->
+		<table class="link-list">
+			<th>List of websites</th>
+
+			<tr>
+				<td><a href="http://localhost/sites/download/download.html">Downloads</a></td>
+			</tr>
+			<tr>	
+				<td><a href="http://localhost/index.html">Home</a></td>
+			</tr>
+			<tr>
+				<td><a href="http://localhost/sites/post/post.php">Post</a></td>
+			</tr>
+			<tr>
+				<td><a href="http://localhost/sites/test/test.html">Test field</a></td>
+			</tr>
+			<tr>
+				<td><a href="http://localhost/sites/test/PHPtest.php">PHP test field</a></td>
+			</tr>
+			<tr>
+				<td><a href="http://localhost/sites/fileUpload/fileUpload.html">fileUpload Testfield</a></td>
+			</tr>
+			<tr>
+				<td><a href="https://www.marxists.org/chinese/">Marxits</a></td>
+			</tr>
+		</table>
+		<!--links to other websites end-->
+
+		</div>
+		<div class="content">
+
+			<!--article-->
+			<div class="cell">
+				<h2>What is this website for?</h2>
+				<p class="firstParagraph">
+					This website of mine is in progress, in the future peopel will be able to post comments on this website, and be able to access this website outside school all the time, but right it is just a test website<br/><blockquote>Across the Great Wall we can reach every corner of the world</blockquote></p>
+				<img class="image" src="http://localhost/resources/earthFromSpace.jpg" width="300px"/>
+			</div>
+
+			<div class="cell">
+				<h2>Big News 2018/1/18</h2>
+				<p class="firstParagraph">
+					The message board is available now - click "post" in the sidebar to jump to the message board!
+				</p>
+			</div>
+
+			<div class="cell">
+				<h2></h2>
+				<p class="firstParagraph">
+				
+				</p>
+			</div>
+			<!--article end-->
+
+			<!--private content-->
+			<div class="cell" id="contentPswd" style="background-color: black;">
+				<div id="containerPswd">
+					<h3 style="color: red;">Private Content<br/>Password Please</h3>
+					<input id="inputPswd" type="text">
+					<button id="submitPswd" type="button" onclick="check()">submit</button>
+				</div>
+			</div>
+			<!--private content end-->
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>If you have any question, please email me 21jzhu@derryfield.org</p>
+	</div>
+
+	</div>
+</body>
+
+<!---body end-->
+
+</html>
