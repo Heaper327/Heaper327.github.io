@@ -1,0 +1,44 @@
+    /* Common Setting*/
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+    /* Specified Setting */
+	.menu-list {
+		width: 150px; /* width of the menu */
+		background: #444444;/* the background pattern of the entire menu*/
+	}
+
+	/* options of menu*/
+	.menu-list > li {
+		background-color: inherit;
+		text-align: center;
+		list-style: none;/* cancels the bulletin point*/
+		position: relative;/* absolute positioning child element*/
+	}
+
+	/* text on the options*/
+	.menu-list > li > p {
+		/* all attributes below are customizable*/
+		display: inline-block;
+		padding: 7px;
+		text-align: inherit;
+		color: #FFFFFF;
+		font-size: 15px;
+		font-family:Arial, Helvetica, sans-serif;
+		background: inherit;
+	}
+
+	/* folded element */
+	.menu-list > li > div {
+		display: inline-block;
+		position: absolute;/* This allows submenu to overlap with other elements by removing it from the element flow*/
+		margin-left: 1px;
+	}
+
+	.menu-list > li > p:hover {
+		/* attributes below are customizable */
+		background-color: red;
+	}

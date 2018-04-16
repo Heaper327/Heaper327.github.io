@@ -1,0 +1,35 @@
+.menu-horizontal nav ul {
+    list-style-type: none;
+    text-align: left;
+    background-color: rgb(59, 98, 99);
+}
+
+.menu-horizontal nav li {
+    display: inline-block;
+    background-color: inherit;
+    width: 100px;
+    text-align: center;
+}
+
+.menu-horizontal nav li + li {
+    margin-left: -5px;
+}
+
+.menu-horizontal nav li:hover {
+    background-color: red;
+}
+
+.menu-horizontal nav a {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menu-horizontal nav .red-bar {
+    width: 100%;
+    height: 5px;
+    background-color: red;
+}

@@ -1,0 +1,43 @@
+#g-header > header{
+    display: block;
+    background: inherit;
+}
+
+#g-header > header .header {
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+    position: relative;/*absolute child element*/
+    background: #EEEEEE;
+}
+
+#g-header > header .header img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#g-header > header .header h1{
+    display: inline-block;
+    font-size: 50px;
+    font-style: italic;
+    color: darkcyan;
+    line-height: 100px;
+}
+
+#g-header > header .header cite{
+    display: inline-block;
+    color: #333333;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#g-header > header .menu-horizontal > nav > .red-bar{
+    background: rgb(179, 2, 2);
+}
+
+#g-header > header .menu-horizontal > nav li:hover{
+    background: rgb(179, 2, 2);
+}
