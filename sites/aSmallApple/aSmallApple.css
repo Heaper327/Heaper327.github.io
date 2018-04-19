@@ -18,6 +18,19 @@ h1.thin-title{
     color: white;
 }
 
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+button{
+    padding: 0.8em;
+    border: none;
+    border-radius: 15%;
+    text-align: center;
+}
+
 /*header*/
 
 body >header{
@@ -100,7 +113,7 @@ header > .bottom-nav li:hover{
 body > main{
     height: 1000px;
     width: 100%;
-    background-color: lightgray;
+    background-color: white;
 }
 
 main > section.plans{
@@ -163,13 +176,51 @@ main > .plans > .row > section > ul{
 .plans > .row > section > ul > li{
     background: white;
     color: black;
-    padding: 5px;
+    padding: 1em;
 }
 
 .plans > .row > section > ul > li + li{
     margin-top: 1px;
 }
 
+main > section.help{
+    margin-top: 5px;
+    width: 100%;
+    background: orange;
+    padding: 1em;
+    font-size: 20px;
+}
+
+main > section.help button{
+    background: white;
+    color: orange;
+    text-shadow:1px 1px 2px #333333;
+}
+
+main > section.features{
+    background: rgb(246, 241, 230);
+    padding: 1.5em;
+    width: 100%;
+}
+
+.features > h1{
+    font-size: 30px;
+    color: orange;
+}
+
+.features > div.container{
+    margin-top: 2em;
+}
+
+.features > .container > div.feature{
+    display: inline-block;
+    width: 20%;
+    padding: 1em;
+}
+
+.features > .container > .feature h1{
+    color: black;
+}
 
 /* footer */
 
