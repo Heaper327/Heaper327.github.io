@@ -11,6 +11,13 @@ a{
     color: inherit;
 }
 
+h1.thin-title{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
 /*header*/
 
 body >header{
@@ -106,11 +113,7 @@ main > section.plans{
 }
 
 main > .plans > h1{
-    text-align: center;
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 100;
-    color: white;
     text-shadow: 1px 1px 2px #333333;
 }
 
@@ -124,7 +127,6 @@ main > .plans > .row > section{
     width: 30%;
     vertical-align: top;
     display: inline-block;
-    height: 200px;
     border-radius: 2px;
 }
 
@@ -148,22 +150,24 @@ main > .plans > .row > section + section{
 }
 
 main > .plans > .row > section > h1{
-    text-align: center;
     font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 100;
-    color: white;
     margin: 10px 0px;
 }
 
-main > .plans > .row > section > ul.info{
+main > .plans > .row > section > ul{
     display: block;
     width: 100%;
-    background: white;
+    background: inherit;
     list-style: none;
 }
-main > .plans > .row > section > .info > li{
-    
+.plans > .row > section > ul > li{
+    background: white;
+    color: black;
+    padding: 5px;
+}
+
+.plans > .row > section > ul > li + li{
+    margin-top: 1px;
 }
 
 
