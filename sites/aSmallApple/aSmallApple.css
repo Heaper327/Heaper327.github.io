@@ -13,8 +13,8 @@ a{
 
 h1.thin-title{
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
     color: white;
 }
 
@@ -126,7 +126,7 @@ main > section.plans{
 }
 
 main > .plans > h1{
-    font-size: 30px;
+    font-size: 50px;
     text-shadow: 1px 1px 2px #333333;
 }
 
@@ -159,7 +159,7 @@ main > .plans > .row > section.plan3{
 }
 
 main > .plans > .row > section + section{
-    margin-left: 10px;
+    margin-left: 2em;
 }
 
 main > .plans > .row > section > h1{
@@ -192,9 +192,10 @@ main > section.help{
 }
 
 main > section.help button{
+    vertical-align: text-bottom;
     background: white;
     color: orange;
-    text-shadow:1px 1px 2px #333333;
+    text-shadow:1px 1px 1px #666666;
 }
 
 main > section.features{
