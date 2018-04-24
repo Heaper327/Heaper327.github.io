@@ -1,3 +1,11 @@
+/*
+    TODOs:
+    - Reduce constants such as tileWidth, get them by arguments of initTable()
+    - Add pauseTable() that pauses refreshTable() that current loops tile the end of the world
+    - Fix randomQuote(): find a quote api, or get quote list by argument
+    - Improve randomChar(), replace the long list of characters with some other stuff
+*/
+
 var tileWidth = 40;
 var tileHeight = 60;
 var margin = tileWidth * 0.1;
