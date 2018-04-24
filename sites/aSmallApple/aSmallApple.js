@@ -1,4 +1,5 @@
-console.log("djskladj");
+var tableStarted = 0;
+
 $(window).scroll(function(){
     var y_pos = $('.bottom-nav').offset().top - $(window).scrollTop();
     if (y_pos <= 35){//Alters the size of logo according to the relative position of it
@@ -15,3 +16,11 @@ $(window).scroll(function(){
         }
     }
 });
+
+$(window).scroll(function() {
+    var scrollPos = $(window).scrollTop();
+    if (scrollPos >= 100 && !tableStarted){
+        tableStarted = 1;
+        startTable();
+    }
+})
