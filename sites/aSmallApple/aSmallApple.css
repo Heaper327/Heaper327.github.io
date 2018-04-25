@@ -230,8 +230,9 @@ main > section.features{
 
 main > section.customer-service{
     background: white;
+    text-align: center;
     width: 100%;
-    height: 1000px;
+    height: 5000px;
     padding: 1em;
 }
 
