@@ -1,4 +1,4 @@
-var activateTilesTable = 0;
+var activateTilesTable = 1;
 
 $(window).scroll(function(){
     var y_pos = $('.bottom-nav').offset().top - $(window).scrollTop();//the y-position of bottom-nav relative to screen 
