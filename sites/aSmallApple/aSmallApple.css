@@ -117,6 +117,16 @@ body > main{
     background-color: white;
 }
 
+main > section.canvas-test{
+    background: lightgray;
+    padding: 5px;
+    text-align: center;
+}
+
+.canvas-test > #welcome{
+    display: inline-block;
+}
+
 main > section.plans{
     background: rgb(175, 222, 212);
     background-repeat: no-repeat;

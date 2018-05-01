@@ -1,4 +1,4 @@
-var activateTilesTable = 0;
+var activateTilesTable = 1;
 
 $(window).scroll(function(){
     var y_pos = $('.bottom-nav').offset().top - $(window).scrollTop();//the y-position of bottom-nav relative to screen 
@@ -20,7 +20,7 @@ $(window).scroll(function(){
 if (activateTilesTable){
     var tableStarted = 0;
     var welcome = new tilesTable();
-    welcome.initTable('welcome',30,40,1,2,'blue','pink',600,myGetQuote);
+    welcome.initTable('welcome',50,70,3,4,'orange','white',600,myGetQuote);
 
     $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
@@ -36,8 +36,8 @@ if (activateTilesTable){
     var quoteList = [
         "Welcome.",
         "This, is future.",
-     "We are always with you.",
-     "For everyone, for each one"
+        "We are always with you.",
+        "For everyone, for each one"
     ]
 
     function myGetQuote(colNum) {//required as an argument of tilesTable.initTable()
