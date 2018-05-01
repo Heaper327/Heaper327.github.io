@@ -118,7 +118,7 @@ body > main{
 }
 
 main > section.canvas-test{
-    background: lightgray;
+    background: #EEEEEE;
     padding: 5px;
     text-align: center;
 }
