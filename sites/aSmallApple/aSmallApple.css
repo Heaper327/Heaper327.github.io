@@ -117,6 +117,16 @@ body > main{
     background-color: white;
 }
 
+main > section.canvas-test{
+    background: lightgray;
+    padding: 5px;
+    text-align: center;
+}
+
+.canvas-test > #welcome{
+    display: inline-block;
+}
+
 main > section.plans{
     background: rgb(175, 222, 212);
     background-repeat: no-repeat;
@@ -199,6 +209,8 @@ main > section.help button{
     text-shadow:1px 1px 1px #666666;
 }
 
+/* TODO: make selector SHORTER but remain informative */
+
 main > section.features{
     background: rgb(246, 241, 230);
     padding: 1.5em;
@@ -212,20 +224,25 @@ main > section.features{
 
 .features > div.container{
     margin-top: 2em;
+    text-align: center;
 }
 
-.features > .container > div.feature{
+.features > .container div.feature{
     display: inline-block;
     width: 20%;
     padding: 1em;
 }
 
-.features > .container > .feature h1{
+.features .feature h1{
     color: black;
 }
 
-.features > .container > .feature img{
+.features .feature img{
     width: 100%;
+}
+
+.features .feature > * + *{
+    margin-top: 5px;
 }
 
 main > section.customer-service{
