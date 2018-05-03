@@ -267,11 +267,11 @@ display: block;
 } 
 
 
-main > section.customer-service > p {
+main > section.customer-service > pre {
     text-align: left;
     font-size: 25px;
     font-family: cursive;
-    margin-left: 10%;
+    margin-left: 10px;
 
 
 }
