@@ -15,7 +15,6 @@ h1.thin-title{
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
-    color: white;
 }
 
 p{
@@ -32,6 +31,10 @@ button{
 }
 
 /*header*/
+
+header {
+    font-size: 15px;
+}
 
 body >header{
     width: 100%;
@@ -125,6 +128,7 @@ main > section.canvas-test{
 
 .canvas-test > #welcome{
     display: inline-block;
+
 }
 
 main > section.plans{
@@ -139,6 +143,7 @@ main > section.plans{
 main > .plans > h1{
     font-size: 50px;
     text-shadow: 1px 1px 2px #333333;
+    color: white;
 }
 
 main > .plans > .row{
@@ -176,6 +181,7 @@ main > .plans > .row > section + section{
 main > .plans > .row > section > h1{
     font-size: 25px;
     margin: 10px 0px;
+    color:white;
 }
 
 main > .plans > .row > section > ul{
@@ -195,6 +201,7 @@ main > .plans > .row > section > ul{
 }
 
 main > section.help{
+    color: white;
     margin-top: 5px;
     width: 100%;
     background: orange;
@@ -245,18 +252,54 @@ main > section.features{
     margin-top: 5px;
 }
 
+.features .feature button {
+    background-color: orange;
+    color: white;
+    font-size: 15px; 
+} 
+
 main > section.customer-service{
     background: white;
-    text-align: center;
     width: 100%;
-    height: 5000px;
+    height: 100px;
     padding: 1em;
 }
 
-.customer-service > canvas.welcome{
-    display: inline-block;
+main > section.customer-service > h1 {
+color: orange;
+text-align: center;
+
+font-size: 66px;
+font-family: 'Times New Roman', Times, serif;
+display: block;
+} 
+
+
+main > section.customer-service > pre {
+    text-align: left;
+    font-size: 25px;
+    font-family: cursive;
+    margin-left: 10px;
+
+
 }
 
+.customer-service .assistance {
+    height: 300px;
+    width: auto;
+    padding-right: 66px;
+    float: right;
+    
+}
+
+.customer-service > button {
+background-color: black;
+color: white;
+border-radius: 10%;
+font-size: 30px;
+float: left;
+margin-left: 10%;
+}
 
 /* footer */
 
