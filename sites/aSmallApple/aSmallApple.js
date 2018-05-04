@@ -20,24 +20,33 @@ $(window).scroll(function(){
 if (activateTilesTable){
     var tableStarted = 0;
     var welcome = new tilesTable();
+    var minPos = 0;
+    var maxPos = 402;
+
     welcome.initTable('welcome',50,70,3,4,'orange','white',600,myGetQuote);
 
-    $(window).scroll(function() {
-    var scrollPos = $(window).scrollTop();
-    if (scrollPos >= 15 && scrollPos <= 1260 && !tableStarted){//start table if table is visible and haven't been started
-        tableStarted = 1;
-        welcome.startTable();
-    }else if (scrollPos < 15 || scrollPos >1260){//stop table when table is not visible
-        tableStarted = 0;
-        welcome.endTable();
+    var tryStartTable = function() {
+        var scrollPos = $(window).scrollTop();
+        //alert (scrollPos);
+        if (scrollPos >= minPos && scrollPos <= maxPos && !tableStarted){//start table if table is visible and haven't been started
+            tableStarted = 1;
+            welcome.startTable();
+        }else if (scrollPos < minPos || scrollPos >maxPos){//stop table when table is not visible
+            tableStarted = 0;
+            welcome.endTable();
+        }
     }
-    })
+
+    $(document).ready(tryStartTable);
+
+    $(window).scroll(tryStartTable);
 
     var quoteList = [
         "Welcome.",
-        "This, is future.",
+        "This is future.",
         "We are always with you.",
-        "For everyone, for each one"
+        "For everyone, for each one",
+        "Better, faster, stronger"
     ]
 
     function myGetQuote(colNum) {//required as an argument of tilesTable.initTable()
