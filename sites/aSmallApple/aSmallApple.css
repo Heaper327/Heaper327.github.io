@@ -40,7 +40,7 @@ header {
     font-size: 15px;
 }
 
-body >header{
+body > header{
     width: 100%;
 }
 
@@ -201,7 +201,7 @@ main > .plans > .row > section > ul{
     padding: 1em;
 }
 
-.plans > .row > section > ul > li + li{
+main > .plans > .row > section > ul > li + li{
     margin-top: 1px;
 }
 
@@ -289,7 +289,7 @@ main > section.customer-service > pre {
 
 }
 
-.customer-service .assistance {
+main > .customer-service .assistance {
     height: 300px;
     width: auto;
     padding-right: 66px;
@@ -297,7 +297,7 @@ main > section.customer-service > pre {
     
 }
 
-.customer-service > button {
+main > .customer-service > button {
 background-color: black;
 
 color: white;
@@ -315,7 +315,7 @@ main > section.cases {
     padding: 20px 0px;
 }
 
-.cases > h1 {
+main > .cases > h1 {
     font-size: 40px;
     color: #EEEEEE;
     text-align: center;
@@ -323,16 +323,16 @@ main > section.cases {
     margin: 30px 0px;
 }
 
-.cases > p.case{
+main > .cases > p.case{
     color: white;
 }
 
-.cases > section.buttons {
+main > .cases > section.buttons {
     margin: 20px 0px;
     text-align: center;
 }
 
-.cases button{
+main > .cases button{
     background-color: rgba(255, 255, 255, 0.83);
     width: 30px;
     height: 30px;
@@ -344,6 +344,9 @@ main > section.cases {
 
 /* footer */
 
+body > .footer {
+
+}
 
 /* utility */
 
