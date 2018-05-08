@@ -11,10 +11,14 @@ a{
     color: inherit;
 }
 
-h1.thin-title{
-    text-align: center;
+h1.thin-text{
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
+}
+
+.thick-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 p{
@@ -261,17 +265,15 @@ main > section.features{
 main > section.customer-service{
     background: white;
     width: 100%;
-    height: 100px;
     padding: 1em;
 }
 
 main > section.customer-service > h1 {
-color: orange;
-text-align: center;
-
-font-size: 66px;
-font-family: 'Times New Roman', Times, serif;
-display: block;
+    color: orange;
+    text-align: center;
+    font-size: 66px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
 } 
 
 
@@ -294,11 +296,25 @@ main > section.customer-service > pre {
 
 .customer-service > button {
 background-color: black;
+
 color: white;
 border-radius: 10%;
 font-size: 30px;
-float: left;
+display: inline-block;
 margin-left: 10%;
+}
+
+main > section.cases {
+    background-color: #130901;
+    display: block;
+    text-align: center;
+}
+
+.cases > h1 {
+    font-size: 20px;
+    color: #EEEEEE;
+    text-align: center;
+    margin: 1em 0em;
 }
 
 /* footer */
