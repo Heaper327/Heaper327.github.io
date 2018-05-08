@@ -148,6 +148,7 @@ main > .plans > h1{
     font-size: 50px;
     text-shadow: 1px 1px 2px #333333;
     color: white;
+    text-align: center;
 }
 
 main > .plans > .row{
@@ -211,6 +212,7 @@ main > section.help{
     background: orange;
     padding: 1em;
     font-size: 20px;
+    text-align: center;
 }
 
 main > section.help button{
@@ -231,6 +233,7 @@ main > section.features{
 .features > h1{
     font-size: 30px;
     color: orange;
+    text-align: center;
 }
 
 .features > div.container{
