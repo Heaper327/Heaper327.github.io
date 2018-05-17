@@ -11,7 +11,7 @@ a{
     color: inherit;
 }
 
-h1.thin-text{
+.thin-text{
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
 }
@@ -267,43 +267,54 @@ main > section.features{
 main > section.customer-service{
     background: white;
     width: 100%;
-    padding: 1em;
+    padding: 2em;
+    text-align: center;
+}
+
+main > section.customer-service > * + * {
+    margin-top: 2em;
 }
 
 main > section.customer-service > h1 {
     color: orange;
     text-align: center;
     font-size: 66px;
-    font-family: 'Times New Roman', Times, serif;
     display: block;
 } 
 
-
-main > section.customer-service > pre {
+main > .customer-service > .content {
+    display: block;
+    width: 100%;
     text-align: left;
-    font-size: 25px;
-    font-family: cursive;
-    margin-left: 10px;
+    padding: 0 2em;
+}
 
+main > .customer-service ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
 
+main > .customer-service li{
+    font-size: 18px;
+    color: black;
+}
+
+main > .customer-service li + li{
+    margin-top: 1em;
 }
 
 main > .customer-service .assistance {
-    height: 300px;
-    width: auto;
-    padding-right: 66px;
-    float: right;
-    
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 main > .customer-service > button {
-background-color: black;
-
-color: white;
-border-radius: 10%;
-font-size: 30px;
-display: inline-block;
-margin-left: 10%;
+    background-color: orange;
+    color: white;
+    border-radius: 10%;
+    font-size: 30px;
 }
 
 main > section.cases {
@@ -344,7 +355,6 @@ main > .cases button{
 /* footer */
 
 body > footer {
-
 }
 
 /* utility */
