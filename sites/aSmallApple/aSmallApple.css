@@ -21,7 +21,7 @@ a{
     font-weight: bolder;
 }
 
-p{
+p li button span{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5em;
@@ -322,39 +322,89 @@ main > section.cases {
     display: block;
     text-align: center;
     width: 100%;
-    padding: 20px 0px;
+    padding: 2em 0px;
 }
 
 main > .cases > h1 {
     font-size: 40px;
-    color: #EEEEEE;
+    color: white;
     text-align: center;
     display: block;
-    margin: 30px 0px;
+}
+
+main > .cases > img{
+    max-width: 80%;
 }
 
 main > .cases > p.case{
     color: white;
 }
 
-main > .cases > section.buttons {
-    margin: 20px 0px;
-    text-align: center;
+main > .cases > * + * {
+    margin-top: 1em;
 }
 
 main > .cases button{
+    margin-left: 20px;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.83);
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin-left: 20px;
     font-size: 15px;
+}
 
+main > .cases button:hover{
+    color: orange;
 }
 
 /* footer */
 
 body > footer {
+    width: 100%;
+    text-align: center;
+    background: #010e34;
+}
+
+footer > .top-footer {
+    background: #010e34;
+    padding: 1em;
+}
+
+footer > .top-footer > img{
+    width: 6em;
+    display: inline-block;
+}
+
+footer > .top-footer > ul{
+    width: 30%;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer > .top-footer li{
+    vertical-align: top;
+    color: white;
+    line-height: 2em;
+}
+
+footer > .bottom-footer {
+    background: #1c284f;
+    padding: 1em;
+}
+
+footer > .bottom-footer > img {
+    width: 20%;
+    height: 3em;
+    overflow: hidden;
+    border: 1px solid #EEEEEE;
+}
+
+footer > .bottom-footer > span {
+    margin-left: 1em;
+    color: white;
+    vertical-align: center;
 }
 
 /* utility */
