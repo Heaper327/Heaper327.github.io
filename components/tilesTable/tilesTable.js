@@ -7,7 +7,7 @@
     Steps to use it：
     1. link tilesTable.js, jcanvas, and jquery to your website 
     2. new a tilesTable object
-    3. call tilesTable.initTable() to initiate the table
+    3. call tilesTable.initTable(id, tileWidthA, tileHeightA, minTimeA, maxTimeA, backColorA, charColorA, switchTimeA, quoteAPI) to initiate the table
     4. call tilesTable.startTable() and tilesTable.endTable() to start and end the refreshing of table
     5. enjoy!
 
@@ -18,14 +18,18 @@
 
         arguments:
             id: string, id of target canvas
-            tileWidthA: number, width of each tile
-            tileHeightA: number, height of each tile
-            minTimeA: number, the minimum time each tile refreshes
-            maxTimeA: number, the maximum time each tile refreshes
-            backColorA: string, background color of tiles
-            charColorA: string, color of characters in tiles
-            switchTimeA: number, length of time between two refreshes
-            quoteAPI: function, a function that when called returns a string to display
+            tileWidthA: float, width of each tile
+            tileHeightA: float, height of each tile
+            minTimeA: int, the minimum time each tile refreshes
+            maxTimeA: int, the maximum time each tile refreshes
+            backColorA: hex decimal, background color of tiles 
+            charColorA: hex decimal, color of characters in tiles
+            switchTimeA: float, length of time between two refreshes
+            quoteAPI: callback function with no parameter, a function that when called returns a string to display (e.g. 
+                function (){
+                    return "Hello World";
+                }
+            )
 
         return:
             return 0 by default, return -1 when error occurs
