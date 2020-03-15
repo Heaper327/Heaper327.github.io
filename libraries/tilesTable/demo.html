@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+  <body>
+    <canvas id="test" width=1200 height=800></canvas>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="jcanvas.min.js"></script>
+  <script src="./tilesTable.js"></script>
+
+  <script>
+
+    var getSentence = function() {
+      return "Hello";
+    };//callback function 
+    
+    var myTilesTable = new tilesTable();
+    myTilesTable.initTable("test", 80, 80, 3, 4, "darkgreen", "#FFFFFF", 500, getSentence);
+    myTilesTable.startTable();
+    
+  </script>
+</html>
